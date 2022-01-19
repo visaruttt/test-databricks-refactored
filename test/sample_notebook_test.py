@@ -1,8 +1,6 @@
 import unittest
-import dbutils
-
-from sample_notebook.sample_notebook import simple_repeat_word
-dbutils.notebook.run("sample_notebook", 10)
+from sample.sample_notebook import simple_repeat_word
+# MAGIC %run ./MyUDF
 
 
 class MyNotebookTests(unittest.TestCase):
