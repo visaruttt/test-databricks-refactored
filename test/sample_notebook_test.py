@@ -4,7 +4,7 @@
 # COMMAND ----------
 
 import unittest
-# from sample.sample_notebook import simple_repeat_word
+from sample.sample_notebook import simple_repeat_word
 
 
 class MyNotebookTests(unittest.TestCase):
@@ -13,10 +13,6 @@ class MyNotebookTests(unittest.TestCase):
         self.assertNotEqual(simple_repeat_word(2), 'wording')
 
 
-suite = unittest.TestLoader().loadTestsFromTestCase(MyNotebookTests)
-runner = unittest.TextTestRunner(verbosity=2)
-runner.run(suite)
-
-# COMMAND ----------
-
-
+# suite = unittest.TestLoader().loadTestsFromTestCase(MyNotebookTests)
+# runner = unittest.TextTestRunner(verbosity=2)
+# runner.run(suite)

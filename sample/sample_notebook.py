@@ -2,5 +2,4 @@
 def simple_repeat_word(i):
     return 'wording ' * i
 
-
-print(simple_repeat_word(10))
+# print(simple_repeat_word(10))
