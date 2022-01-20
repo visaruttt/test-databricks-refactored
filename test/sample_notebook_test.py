@@ -1,6 +1,10 @@
+# Databricks notebook source
+# MAGIC %run ../sample/sample_notebook
+
+# COMMAND ----------
+
 import unittest
-from sample.sample_notebook import simple_repeat_word
-# MAGIC %run ./MyUDF
+# from sample.sample_notebook import simple_repeat_word
 
 
 class MyNotebookTests(unittest.TestCase):
@@ -12,3 +16,7 @@ class MyNotebookTests(unittest.TestCase):
 suite = unittest.TestLoader().loadTestsFromTestCase(MyNotebookTests)
 runner = unittest.TextTestRunner(verbosity=2)
 runner.run(suite)
+
+# COMMAND ----------
+
+
